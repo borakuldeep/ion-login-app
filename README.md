@@ -35,11 +35,10 @@ The App root looks like above (App.jsx file).
 - The users list is stored as sorted by names. A real DB would also store rows in sorted (indexed) ways.
 - This will allow to search users using efficient ways - for example, binary search is used in this file.
 
-## third party libs
+## Third party libs
 
 Chakra UI is used for UI components.
 - Biggest component is Modal which shows login form. Forms are usually complicated components and hence third party UI makes it easier to implement.
-- The input validation and calling mock api is done in same src/LoginForm.jsx file.
 
 ## Input validation and calling mock apis
 
