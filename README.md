@@ -43,6 +43,13 @@ Chakra UI is used for UI components.
 
 ## Input validation and calling mock apis
 
+- validation
+
+![Screenshot 2022-06-10 at 19 59 19](https://user-images.githubusercontent.com/36533806/173124442-c3eecfd0-0ed1-476e-885b-22c064dd8896.png)
+
+
+- calling mock api
+
 ![Screenshot 2022-06-10 at 19 57 05](https://user-images.githubusercontent.com/36533806/173124185-b3aa4cd4-4464-4cdb-978c-9629395167ff.png)
 
 
