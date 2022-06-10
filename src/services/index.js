@@ -48,7 +48,9 @@ const users = [
       }
   
       // Else look in left or right half accordingly
-      else if (users[mid].name < user.name) start = mid + 1;
+      else if (users[mid].name < user.name) {
+          start = mid + 1;
+      }
       else end = mid - 1;
     }
   
@@ -56,7 +58,8 @@ const users = [
   };
   
   export const loginService = async (user) => {
-    // simulate network delay
-    await new Promise((r) => setTimeout(r, 1000));
+    // simulate network delay 500ms to 3 seconds
+    const delayFactor = Math.floor(Math.random() * 3) * 1000;
+    await new Promise((r) => setTimeout(r, delayFactor || 500));
     return searchUser(user);
   };
