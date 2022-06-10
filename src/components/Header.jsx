@@ -6,7 +6,7 @@ export const Header = ({ isLoggedIn, setIsLoggedIn, setUser }) => {
 
   return (
     <header className="app-header">
-      <img src="ion-logo.png" width="80px" />
+      <img src="ion-logo.png" alt="ion group logo" width="80px" />
       {isLoggedIn ? (
         <Button onClick={() => setIsLoggedIn(false)} colorScheme="red" variant='outline'>
           Logout
