@@ -43,7 +43,8 @@ Chakra UI is used for UI components.
 
 ## Input validation and calling mock apis
 
-![Screenshot 2022-06-10 at 19 49 00](https://user-images.githubusercontent.com/36533806/173122948-b8080ceb-4244-46b5-9266-e07faf9f23cf.png)
+![Screenshot 2022-06-10 at 19 57 05](https://user-images.githubusercontent.com/36533806/173124185-b3aa4cd4-4464-4cdb-978c-9629395167ff.png)
+
 
 - Here in src/LoginForm.jsx file, when user press login or press enter on password field, the `getUserLogin` function is called.
 - The function will make login button in loading state and call the asynchronous backend function.
