@@ -27,23 +27,27 @@ export const LoginForm = ({
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
 
-  // match(/[\^\,\.\\\/]/g);
   const isUserNameNotValid = userName.match(/[\^,.\\/]/g);
   const isPasswordNotValid = password.match(/[\^,.\\/]/g);
 
   const getUserLogin = async () => {
     setIsLoading(true);
-    const loginResult = await loginService({
-      name: userName,
-      password: password,
-    });
-    if (loginResult.success) {
-      setIsLoggedIn(true);
-      setIsLoading(false);
-      setUser(userName);
-      resetFormState();
-    } else {
-      setError(loginResult.errorMessage);
+    try {
+      const loginResult = await loginService({
+        name: userName,
+        password: password,
+      });
+      if (loginResult.success) {
+        setIsLoggedIn(true);
+        setIsLoading(false);
+        setUser(userName);
+        resetFormState();
+      } else {
+        setError(loginResult.errorMessage);
+        setIsLoading(false);
+      }
+    } catch {
+      setError('Something went wrong!! Try again.');
       setIsLoading(false);
     }
   };
