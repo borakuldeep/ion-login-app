@@ -17,6 +17,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+## users to login
+Below are the user / password credentials to login:
+- Alex / 12345!
+- Brad / 12345!
+- James / 12345!
+- Julia / 12345!
+- Kuldeep / 12345!
+- Maria / 12345!
+
 ## App structure
 
 ![Screenshot 2022-06-10 at 19 34 40](https://user-images.githubusercontent.com/36533806/173120692-f7f0b2b2-29fd-4152-bb82-e0446962701f.png)
