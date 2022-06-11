@@ -65,6 +65,6 @@ Chakra UI is used for UI components.
 
 
 - Here in src/LoginForm.jsx file, when user press login or press enter on password field, the `getUserLogin` function is called.
-- The function will make login button in loading state and call the asynchronous backend function.
+- The function will make login button in loading state and call the asynchronous backend `loginService`.
 - When resolved, the login loading will be removed and error will be shown if returned from api.
 - When login api is successful, the login window will be removed and Private content will be shown.
